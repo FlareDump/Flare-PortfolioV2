@@ -6,13 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     hamburger.addEventListener("click", function () {
         navLinks.classList.remove("hidden");
-        navLinks.classList.add("flex");
     });
 
     if (closeBtn) {
         closeBtn.addEventListener("click", function () {
             navLinks.classList.add("hidden");
-            navLinks.classList.remove("flex");
         });
     }
 
@@ -21,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function () {
             if (window.innerWidth < 640) {
                 navLinks.classList.add("hidden");
-                navLinks.classList.remove("flex");
             }
         });
     });
@@ -84,4 +81,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     onScrollHighlight();
+
+    // Lightbulb theme toggle (desktop and mobile)
+    const lightbulbs = [
+        document.getElementById("navbar-lightbulb"),
+        ...document.querySelectorAll("#navbar-links #navbar-lightbulb"),
+        ...document.querySelectorAll(".fa-lightbulb"),
+    ].filter(Boolean);
+    function updateLightbulbIcons() {
+        const isDark = document.documentElement.classList.contains("dark");
+        lightbulbs.forEach((bulb) => {
+            bulb.classList.add("text-white");
+            if (isDark) {
+                bulb.classList.remove("fa-solid");
+                bulb.classList.add("fa-regular");
+            } else {
+                bulb.classList.add("fa-solid");
+                bulb.classList.remove("fa-regular");
+            }
+        });
+    }
+    lightbulbs.forEach((bulb) => {
+        bulb.style.cursor = "pointer";
+        bulb.addEventListener("click", function (e) {
+            e.stopPropagation();
+            document.documentElement.classList.toggle("dark");
+            updateLightbulbIcons();
+        });
+    });
+    updateLightbulbIcons();
 });

@@ -1,6 +1,6 @@
 <div class="flex min-h-screen flex-col items-center justify-center">
     <h2
-        class="hide-top font-primary text-primary mb-10 text-center text-3xl font-bold sm:text-4xl md:text-left md:text-5xl">
+        class="hide-top font-primary text-textPrimary mb-10 text-center text-3xl font-bold sm:text-4xl md:text-left md:text-5xl">
         Projects</h2>
 
     <div class="hide-right flex flex-col gap-5 space-y-5 sm:flex-row sm:flex-wrap">

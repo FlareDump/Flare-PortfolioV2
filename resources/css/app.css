@@ -13,12 +13,33 @@
 
     --font-primary: 'DM Sans', sans-serif;
     --font-secondary: 'Poppins', sans-serif;
-    --color-primary: #16302B;
-    --color-secondary: #1A1A40;
-    --color-light: #FFFFFF;
-    --color-dark: #16302B;
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-light: var(--color-light);
+    --color-darkButtonPrimary: var(--color-darkButtonPrimary);
+    --color-lightButtonPrimary: var(--color-lightButtonPrimary);
+    --color-textPrimary: var(--color-textPrimary);
 
 }
+
+:root {
+  --color-primary: #16302B;      /* Light background */
+  --color-secondary: #1A1A40;    /* Accent */
+  --color-light: #FFFFFF;        /* Light text/bg */
+  --color-darkButtonPrimary: #16302B;
+  --color-lightButtonPrimary: #FFFFFF;
+  --color-textPrimary: #16302B;  /* Dark text */
+}
+
+.dark {
+  --color-primary: #1E3A3A;      /* Dark background */
+  --color-secondary: #2C2C54;    /* Muted accent */
+  --color-darkButtonPrimary: #FFFFFF;
+  --color-lightButtonPrimary: #16302B;
+  --color-light: #16302B;        /* Soft light */
+  --color-textPrimary: #FFFFFF;  /* Light text */
+}
+
 
 .hide-left {
     opacity: 0;

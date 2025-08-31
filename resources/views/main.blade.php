@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="bg-light scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -16,16 +16,16 @@
     </header>
     <div class="flex flex-col">
 
-        <section id="hero" class="mb-20 min-h-screen scroll-mt-24 px-5 py-2 md:px-6 lg:px-[180px]">
+        <section id="hero" class="mb-20 min-h-screen scroll-mt-10 px-5 py-2 md:px-6 lg:px-[180px]">
             @include('components.hero')
         </section>
 
-        <section id="about" class="space-y-30 scroll-mt-30 min-h-screen px-5 md:px-[80px] lg:px-[180px]">
+        <section id="about" class="space-y-30 min-h-screen scroll-mt-10 px-5 md:px-[80px] lg:px-[180px]">
             @include('components.about')
         </section>
 
 
-        <section id="projects" class="my-20 min-h-screen scroll-mt-24 px-5 md:px-[80px] lg:px-[160px]">
+        <section id="projects" class="my-20 min-h-screen scroll-mt-10 px-5 md:px-[80px] lg:px-[160px]">
             @include('components.projects')
         </section>
 
@@ -33,12 +33,12 @@
             @include('components.philosophy')
         </section>
 
-        <section id="contact" class="min-h-screen -scroll-mt-20 px-5 md:px-[80px] lg:px-[180px]">
+        <section id="contact" class="min-h-screen -scroll-mt-10 px-5 md:px-[80px] lg:px-[180px]">
             @include('components.contact')
         </section>
 
     </div>
-    <footer class="text-light bg-primary text-lg">
+    <footer class="bg-primary text-lg text-white">
         @include('components.footer')
     </footer>
 

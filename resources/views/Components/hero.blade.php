@@ -13,20 +13,24 @@
 </script>
 @vite('resources/js/carousel.js')
 
-<main class="grid h-[90vh] place-items-center">
+<main class="grid h-screen -translate-y-10 place-items-center">
     <div class="flex w-full flex-col gap-10 md:gap-20 lg:gap-20">
         <div
             class="flex w-full flex-col-reverse justify-between gap-2 sm:py-2 md:flex-col-reverse md:gap-16 lg:flex-row lg:gap-16">
             <div class="hide-left flex flex-1 flex-col justify-center space-y-5">
-                <p class="font-primary text-secondary/50 md:ml-30 text-lg font-semibold lg:ml-0"><i>Hi, I'm</i></p>
+                <p class="font-primary md:ml-30 text-[var(--color-textPrimary)]/50 text-lg font-semibold lg:ml-0">
+                    <i>Hi, I'm</i>
+                </p>
                 <h1
-                    class="font-primary text-primary md:ml-30 text-left text-6xl font-black md:text-7xl lg:ml-0 lg:text-8xl">
+                    class="font-primary md:ml-30 text-left text-6xl font-black text-[var(--color-textPrimary)] md:text-7xl lg:ml-0 lg:text-8xl">
                     RAYVER </h1>
                 <h1
-                    class="font-primary text-primary md:mr-30 text-right text-6xl font-black md:text-7xl lg:mr-0 lg:text-8xl">
+                    class="font-primary md:mr-30 text-right text-6xl font-black text-[var(--color-textPrimary)] md:text-7xl lg:mr-0 lg:text-8xl">
                     DASALLA
                 </h1>
-                <p class="font-primary text-secondary/50 md:mr-30 text-end text-lg font-semibold lg:mr-0"><i>(Flare)</i>
+                <p
+                    class="font-primary md:mr-30 text-[var(--color-textPrimary)]/50 text-end text-lg font-semibold lg:mr-0">
+                    <i>(Flare)</i>
                 </p>
             </div>
             {{-- My Images --}}

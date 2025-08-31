@@ -1,7 +1,7 @@
 <div class="flex min-h-screen flex-col items-center justify-center gap-10 text-center lg:flex-row">
     <div class="flex w-full flex-col items-center gap-10 text-center lg:items-start lg:text-left">
         <div class="hide-left flex w-full flex-col items-center gap-10 text-center lg:items-start lg:text-left">
-            <h2 class="font-primary text-primary text-5xl font-bold">I'm a Full-Stack Web Developer</h2>
+            <h2 class="font-primary text-textPrimary text-5xl font-bold">I'm a Full-Stack Web Developer</h2>
             @php
                 if (!isset($max)) {
                     $files = glob(public_path('assets/icons/tech/*.png'));
@@ -38,10 +38,10 @@
         </div>
         <div class="flex w-full justify-center gap-10">
             <x-ui.dark-button href="#"
-                class="hide-bottom lg:px-15 md:px-15 px-4 py-2 text-center text-xs md:py-4 md:text-xl lg:py-4 lg:text-xl">VIEW
+                class="hide-bottom lg:px-15 md:px-15 px-4 py-2 text-center text-base md:py-4 lg:py-4">VIEW
                 CV</x-ui.dark-button>
             <x-ui.light-button href="#contact"
-                class="hide-bottom lg:px-15 md:px-15 px-4 py-2 text-center text-xs md:py-4 md:text-xl lg:py-4 lg:text-xl">LET'S
+                class="hide-bottom lg:px-15 md:px-15 px-4 py-2 text-center text-base md:py-4 lg:py-4">LET'S
                 WORK
                 TOGETHER</x-ui.light-button>
         </div>
@@ -88,7 +88,7 @@
 </div>
 
 <div class="flex flex-col items-center gap-10 md:items-start md:gap-0 lg:items-start lg:gap-0">
-    <h2 class="hide-left font-primary text-primary mb-5 text-5xl font-bold">Skills</h2>
+    <h2 class="hide-left font-primary text-textPrimary mb-5 text-5xl font-bold">Skills</h2>
     <div class="hide-left flex w-full flex-col items-center justify-around gap-8 md:flex-row md:gap-8">
         {{-- prettier-ignore --}}
         <x-ui.skill-card 
