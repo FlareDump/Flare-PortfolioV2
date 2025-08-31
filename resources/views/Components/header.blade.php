@@ -8,8 +8,7 @@
         </a href="">
     </div>
     <!-- Hamburger Button -->
-    <button id="navbar-hamburger"
-        class="flex items-center rounded border border-white px-3 py-2 text-white focus:outline-none sm:hidden"
+    <button id="navbar-hamburger" class="flex items-center rounded px-3 py-2 text-white focus:outline-none sm:hidden"
         aria-label="Toggle navigation">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -18,7 +17,7 @@
     </button>
     <!-- Fullscreen Navbar Overlay -->
     <div id="navbar-links"
-        class="bg-primary fixed inset-0 z-50 flex hidden h-screen w-screen flex-col items-center justify-center sm:static sm:inset-auto sm:z-auto sm:flex sm:h-auto sm:w-auto sm:flex-row sm:gap-16 sm:bg-transparent sm:bg-transparent sm:p-0 md:gap-24">
+        class="bg-primary fixed inset-0 z-50 flex hidden h-screen w-screen flex-col items-center justify-center sm:static sm:inset-auto sm:z-auto sm:flex sm:h-auto sm:w-auto sm:flex-row sm:gap-16 sm:p-0 md:gap-24">
         <ul
             class="flex flex-col items-center justify-center gap-10 text-2xl font-bold sm:flex-row sm:gap-16 sm:text-base sm:font-medium md:gap-24">
             <li>

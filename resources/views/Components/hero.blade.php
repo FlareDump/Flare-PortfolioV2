@@ -7,7 +7,13 @@
         'assets/profiles/me_5.png',
         'assets/profiles/me_6.png',
     ];
+
+    $firstName = 'RAYVER';
+    $lastName = 'DASALLA';
+    $nickname = 'Flare';
+
 @endphp
+
 <script>
     window.profileImages = @json($profileImages);
 </script>
@@ -23,13 +29,13 @@
                 </p>
                 <h1
                     class="font-primary md:ml-30 text-textPrimary text-left text-6xl font-black md:text-7xl lg:ml-0 lg:text-8xl">
-                    RAYVER </h1>
+                    {{ $firstName }}</h1>
                 <h1
                     class="font-primary md:mr-30 text-textPrimary text-right text-6xl font-black md:text-7xl lg:mr-0 lg:text-8xl">
-                    DASALLA
+                    {{ $lastName }}
                 </h1>
                 <p class="font-primary md:mr-30 text-textPrimary/50 text-end text-lg font-semibold lg:mr-0">
-                    <i>(Flare)</i>
+                    <i>( {{ $nickname }} )</i>
                 </p>
             </div>
             {{-- My Images --}}

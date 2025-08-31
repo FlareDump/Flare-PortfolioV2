@@ -1,21 +1,34 @@
+@php
+
+    $gmail = 'rayverdasalla@gmail.com';
+    $phone = '+63 932-129-6896';
+
+    $place = 'Davao City';
+    $country = 'Philippines';
+
+    $firstName = 'RAYVER';
+    $lastName = 'DASALLA';
+
+@endphp
+
 <div
     class="flex flex-col items-center gap-10 px-4 py-8 text-base sm:px-8 md:flex-row md:items-start md:justify-between md:px-16 md:py-10 md:text-lg lg:px-[180px]">
     <div
         class="font-primary flex flex-col items-center justify-center gap-8 text-center md:items-start md:gap-20 md:text-left">
         <ul>
-            <li>rayverdasalla@gmail.com</li>
-            <li>+63 932-129-6896</li>
+            <li>{{ $gmail }}</li>
+            <li>{{ $phone }}</li>
         </ul>
         <ul>
             <li class="font-bold">A Creative Developer</li>
-            <li>Base in Davao City,</li>
-            <li>Philippines</li>
+            <li>Base in {{ $place }},</li>
+            <li>{{ $country }}</li>
         </ul>
     </div>
     <div class="flex flex-col items-center gap-5">
         <img class="h-32 w-36 sm:h-[180px] sm:w-[200px] md:h-[217px] md:w-[250px]"
             src="{{ asset('assets/RD Logo Light.png') }}" alt="RD">
-        <h1 class="font-secondary text-3xl font-bold sm:text-4xl md:text-5xl">RAYVER DASALLA</h1>
+        <h1 class="font-secondary text-3xl font-bold sm:text-4xl md:text-5xl">{{ $firstName . ' ' . $lastName }}</h1>
     </div>
     <div class="font-primary flex flex-col items-center justify-center gap-5">
         <h3 class="font-bold">Follow Me</h3>
